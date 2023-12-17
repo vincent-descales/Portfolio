@@ -1,0 +1,32 @@
+---
+import heroImage from '@assets/images/hero.jpg';
+import { Image } from '@astrojs/image/components';
+import Button from '@components/ui/Button.astro';
+---
+
+<section
+	data-testid="hero"
+	class="flex h-screen flex-col-reverse items-center justify-center text-center lg:flex-row"
+>
+	<div class="mb-10 flex flex-col items-center lg:mb-0 lg:w-1/2">
+		<div>
+			<h1 class="mb-10 font-monospace text-3xl text-black dark:text-white lg:text-5xl">
+				Salutations ! Je suis <span class="text-orange">Vincent Descales</span> et j'exerce le métier de concepteur développeur d’application sur Marseille.
+			</h1>
+		</div>
+		<div class="mb-10">
+			<Button style={'primary'} size={'lg'} class={'flex'} name="learn more" onClick="window.location='#about'">En apprendre plus</Button>
+		</div>
+	</div>
+	<div data-testid="hero-img" class="mb-10 flex w-1/2 items-center justify-center">
+		<Image
+			src={heroImage}
+			alt="Vincent Descales Image"
+			aspectRatio="4:4"
+			format="jpg"
+			width={450}
+			height={600}
+			loading="eager"
+		/>
+	</div>
+</section>

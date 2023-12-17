@@ -1,0 +1,38 @@
+---
+import projectImage from '@assets/images/project.png';
+import { Image } from '@astrojs/image/components';
+---
+
+<section
+	data-testid="about"
+	id="about"
+	class="mb-10 flex flex-col items-center justify-center lg:mb-0 lg:h-screen lg:flex-row"
+>
+	<div class="mb-10 flex w-full flex-col items-center justify-center lg:mb-0 lg:w-1/2">
+		<h2 class="font-monospace text-2xl text-orange lg:text-4xl">À propos de moi</h2>
+		<span class="mb-6 ml-2 h-1 w-10 bg-orange"></span>
+	</div>
+
+	<div class="w-full text-justify text-black dark:text-white lg:w-1/2">
+		<p class="mb-2">
+			Motivé par la programmation de site web et d'application en réseaux, je suis une personne assez minutieuse dans mon travail et ma recherche.
+			<br>Doté d'expérience en entreprise, je saurais répondre à des besoins équivalent sur des postes similaires.
+			Actuellement, je suis à la recherche d'une alternance sur la région et je possède le Permis B.
+			Je me tiens à votre disposition pour toutes missions ou questions relatives à mon profil sur mon réseau LinkedIn.
+			<br>Dans l'attente d'une possible rencontre, je vous invite à regarder, mesdames & messieurs, la présentation de quelques-uns de mes projets.
+			<br>Mes sincères salutations.
+		</p>
+	</div>
+	<div>
+		<Image
+			src={projectImage}
+			alt="Project Image"
+			aspectRatio="4:4"
+			format="png"
+			width={200}
+			height={200}
+			loading="eager"
+		/>
+	</div>
+	
+</section>
