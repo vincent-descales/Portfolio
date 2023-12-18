@@ -1,6 +1,7 @@
 {
   "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
+    "noImplicitAny": true,
     "target": "ESNext",
     "module": "ESNext",
     "moduleResolution": "node",
