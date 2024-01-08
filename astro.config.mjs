@@ -7,6 +7,6 @@ import netlify from '@astrojs/netlify/functions';
 // https://astro.build/config
 export default defineConfig({
 	integrations: [tailwind(), mdx(), image()],
-	site: 'https://portfolio-vincent-descales.github.io/',
+	site: 'https://vincent-descales.github.io/',
   	base: '/Portfolio',
 });
